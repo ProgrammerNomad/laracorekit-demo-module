@@ -6,7 +6,7 @@ use Filament\Widgets\Widget;
 
 class DemoBannerWidget extends Widget
 {
-    protected static string $view = 'demo::filament.widgets.demo-banner';
+    protected string $view = 'demo::filament.widgets.demo-banner';
 
     protected int | string | array $columnSpan = 'full';
 
