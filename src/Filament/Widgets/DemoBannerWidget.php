@@ -14,16 +14,19 @@ class DemoBannerWidget extends Widget
 
     public static function canView(): bool
     {
-        return config('demo.enabled') && config('demo.banner.show_on_admin');
+        return config('demo.enabled', false) && config('demo.banner.show_on_admin', true);
     }
 
     public function getCredentials(): array
     {
-        return config('demo.credentials');
+        return config('demo.credentials', [
+            'admin' => ['email' => 'admin@demo.test', 'password' => 'Admin@123'],
+            'user' => ['email' => 'user@demo.test', 'password' => 'User@123'],
+        ]);
     }
 
     public function getResetInterval(): int
     {
-        return config('demo.reset_interval');
+        return config('demo.reset_interval', 30);
     }
 }
