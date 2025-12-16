@@ -2,9 +2,9 @@
 
 Auto-resetting demo environment for Laravel applications with Filament integration. Perfect for showcasing your Laravel projects with automatic database resets every 30 minutes.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/programmernomad/aracorekit-demo-module.svg?style=flat-square)](https://packagist.org/packages/programmernomad/aracorekit-demo-module)
-[![Total Downloads](https://img.shields.io/packagist/dt/programmernomad/aracorekit-demo-module.svg?style=flat-square)](https://packagist.org/packages/programmernomad/aracorekit-demo-module)
-[![License](https://img.shields.io/packagist/l/programmernomad/aracorekit-demo-module.svg?style=flat-square)](https://packagist.org/packages/programmernomad/aracorekit-demo-module)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/programmernomad/laracorekit-demo-module.svg?style=flat-square)](https://packagist.org/packages/programmernomad/laracorekit-demo-module)
+[![Total Downloads](https://img.shields.io/packagist/dt/programmernomad/laracorekit-demo-module.svg?style=flat-square)](https://packagist.org/packages/programmernomad/laracorekit-demo-module)
+[![License](https://img.shields.io/packagist/l/programmernomad/laracorekit-demo-module.svg?style=flat-square)](https://packagist.org/packages/programmernomad/laracorekit-demo-module)
 
 ## Features
 
@@ -36,7 +36,7 @@ Auto-resetting demo environment for Laravel applications with Filament integrati
 Install via Composer:
 
 ```bash
-composer require programmernomad/aracorekit-demo-module
+composer require programmernomad/laracorekit-demo-module
 ```
 
 The package will automatically register via Laravel's package auto-discovery.
@@ -329,7 +329,7 @@ Clone and link locally:
 
 ```bash
 # Clone repo
-git clone https://github.com/ProgrammerNomad/aracorekit-demo-module.git
+git clone https://github.com/programmernomad/laracorekit-demo-module.git
 
 # In your Laravel project's composer.json
 {
@@ -343,12 +343,12 @@ git clone https://github.com/ProgrammerNomad/aracorekit-demo-module.git
         }
     ],
     "require-dev": {
-        "programmernomad/aracorekit-demo-module": "@dev"
+        "programmernomad/laracorekit-demo-module": "@dev"
     }
 }
 
 # Install
-composer update programmernomad/aracorekit-demo-module
+composer update programmernomad/laracorekit-demo-module
 ```
 
 ### Testing
@@ -384,8 +384,8 @@ The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
 ## Support
 
-- **Issues**: [GitHub Issues](https://github.com/ProgrammerNomad/aracorekit-demo-module/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/ProgrammerNomad/aracorekit-demo-module/discussions)
+- **Issues**: [GitHub Issues](https://github.com/programmernomad/laracorekit-demo-module/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/programmernomad/laracorekit-demo-module/discussions)
 - **Documentation**: [Full Setup Guide](https://github.com/ProgrammerNomad/LaraCoreKit/blob/main/DEMO_SETUP.md)
 
 ## Related Projects
