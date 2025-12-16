@@ -211,6 +211,24 @@ protected function getHeaderWidgets(): array
 
 The widget will only show when `DEMO_MODE=true`.
 
+## UI Integration
+
+**See [UI_INTEGRATION_GUIDE.md](UI_INTEGRATION_GUIDE.md) for complete integration examples.**
+
+### Quick Start
+
+**Frontend Login:**
+```blade
+<x-demo-login-banner type="user" />
+```
+
+**Filament Admin Login:**
+```bash
+# Windows PowerShell
+Copy-Item "vendor\programmernomad\laracorekit-demo-module\stubs\filament-login.blade.php" `
+         -Destination "resources\views\filament\pages\auth\login.blade.php"
+```
+
 ## Blade Components
 
 ### Login Page Banner
