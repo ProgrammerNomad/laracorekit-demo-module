@@ -2,6 +2,13 @@
 
 All notable changes to `laracorekit-demo-module` will be documented in this file.
 
+## [1.0.1] - 2026-04-21
+
+### Changed
+- Updated Filament support to include versions 3.0, 4.0, and 5.0
+- Updated Laravel support documentation to include version 13.0
+- Updated Orchestra Testbench to support version 10.0
+
 ## [1.0.0] - 2025-12-16
 
 ### Added
@@ -17,7 +24,7 @@ All notable changes to `laracorekit-demo-module` will be documented in this file
 - Log rotation (keeps last 7 days)
 - Full configuration via .env variables
 - Blade components for easy integration
-- Support for Laravel 11 and 12
-- Support for Filament 3
+- Support for Laravel 11, 12, and 13
+- Support for Filament 3, 4, and 5
 - PSR-4 autoloading
 - Laravel package auto-discovery

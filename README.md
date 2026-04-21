@@ -28,8 +28,8 @@ Auto-resetting demo environment for Laravel applications with Filament integrati
 ## Requirements
 
 - PHP 8.2 or higher
-- Laravel 11.0 or 12.0
-- Filament 3.0 (optional, for admin widgets)
+- Laravel 11.0, 12.0, or 13.0
+- Filament 3.0, 4.0, or 5.0 (optional, for admin widgets)
 
 ## Installation
 
