@@ -2,6 +2,20 @@
 
 All notable changes to `laracorekit-demo-module` will be documented in this file.
 
+## [1.0.3] - 2026-04-21
+
+### Changed
+- Improved demo banner widget UI design
+- Removed large warning icon for cleaner appearance
+- Made reset timer more prominent in the banner
+- Removed internal server configuration from user-facing widget
+
+## [1.0.2] - 2026-04-21
+
+### Changed
+- Enhanced demo banner layout with better visual hierarchy
+- Improved credentials display in grid format
+
 ## [1.0.1] - 2026-04-21
 
 ### Changed
