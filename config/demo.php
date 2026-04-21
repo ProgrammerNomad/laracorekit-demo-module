@@ -7,17 +7,18 @@ return [
 
     'credentials' => [
         'admin' => [
-            'email' => env('DEMO_ADMIN_EMAIL', 'admin@demo.test'),
+            'email' => env('DEMO_ADMIN_EMAIL', 'admin@laracorekit.com'),
             'password' => env('DEMO_ADMIN_PASSWORD', 'Admin@123'),
         ],
         'user' => [
-            'email' => env('DEMO_USER_EMAIL', 'user@demo.test'),
+            'email' => env('DEMO_USER_EMAIL', 'user@laracorekit.com'),
             'password' => env('DEMO_USER_PASSWORD', 'User@123'),
         ],
     ],
 
     'allowed_hosts' => [
-        'laracorekit.mobrilz.digital',
+        'www.laracorekit.com',
+        'laracorekit.com',
         'localhost',
         '127.0.0.1',
     ],

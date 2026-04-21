@@ -8,22 +8,22 @@ Auto-resetting demo environment for Laravel applications with Filament integrati
 
 ## Features
 
-- ✅ **Auto-Reset Database**: Automatically fresh migrate + seed every 30 minutes (configurable)
-- ✅ **Demo Credentials Banner**: Show login credentials on auth pages and admin dashboard
-- ✅ **Filament Integration**: Beautiful admin widgets displaying demo info
-- ✅ **Action Blocking**: Prevent destructive operations (user deletion, critical settings)
-- ✅ **Media Cleanup**: Auto-delete uploaded files on reset
-- ✅ **Session & Cache Clear**: Clean state on every reset
-- ✅ **Security**: Domain whitelisting, production safeguards
-- ✅ **Cron Scheduling**: Integrated with Laravel scheduler
-- ✅ **Customizable**: Full control over reset interval, credentials, blocked actions
+- âœ… **Auto-Reset Database**: Automatically fresh migrate + seed every 30 minutes (configurable)
+- âœ… **Demo Credentials Banner**: Show login credentials on auth pages and admin dashboard
+- âœ… **Filament Integration**: Beautiful admin widgets displaying demo info
+- âœ… **Action Blocking**: Prevent destructive operations (user deletion, critical settings)
+- âœ… **Media Cleanup**: Auto-delete uploaded files on reset
+- âœ… **Session & Cache Clear**: Clean state on every reset
+- âœ… **Security**: Domain whitelisting, production safeguards
+- âœ… **Cron Scheduling**: Integrated with Laravel scheduler
+- âœ… **Customizable**: Full control over reset interval, credentials, blocked actions
 
 ## Use Cases
 
-- 🎭 **Demo Websites**: Show off your Laravel/Filament projects
-- 🧪 **Testing Environments**: Auto-reset sandbox for testers
-- 🎓 **Training Platforms**: Clean state for each training session
-- 🚀 **SaaS Trials**: Let users try your app without permanent changes
+- ðŸŽ­ **Demo Websites**: Show off your Laravel/Filament projects
+- ðŸ§ª **Testing Environments**: Auto-reset sandbox for testers
+- ðŸŽ“ **Training Platforms**: Clean state for each training session
+- ðŸš€ **SaaS Trials**: Let users try your app without permanent changes
 
 ## Requirements
 
@@ -61,9 +61,9 @@ DEMO_MODE=true
 DEMO_RESET_INTERVAL=30
 
 # Demo Credentials (shown on login pages)
-DEMO_ADMIN_EMAIL=admin@demo.test
+DEMO_ADMIN_EMAIL=admin@laracorekit.com
 DEMO_ADMIN_PASSWORD=Admin@123
-DEMO_USER_EMAIL=user@demo.test
+DEMO_USER_EMAIL=user@laracorekit.com
 DEMO_USER_PASSWORD=User@123
 ```
 
@@ -276,17 +276,17 @@ Route::middleware('demo.block')->group(function () {
 
 Every reset cycle cleans:
 
-- ✅ **Database**: Fresh migrations + seeders
-- ✅ **Media Files**: `storage/app/public/media/*`
-- ✅ **Cache**: All cached data
-- ✅ **Sessions**: Active user sessions
-- ✅ **Logs**: Rotated (keeps last 7 days)
+- âœ… **Database**: Fresh migrations + seeders
+- âœ… **Media Files**: `storage/app/public/media/*`
+- âœ… **Cache**: All cached data
+- âœ… **Sessions**: Active user sessions
+- âœ… **Logs**: Rotated (keeps last 7 days)
 
 **Preserved:**
-- ✅ `.env` configuration
-- ✅ Compiled assets (`public/build/*`)
-- ✅ Vendor packages
-- ✅ Node modules
+- âœ… `.env` configuration
+- âœ… Compiled assets (`public/build/*`)
+- âœ… Vendor packages
+- âœ… Node modules
 
 ## Troubleshooting
 
@@ -413,4 +413,4 @@ The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
 ---
 
-**Made with ❤️ for the Laravel community**
+**Made with â¤ï¸ for the Laravel community**
