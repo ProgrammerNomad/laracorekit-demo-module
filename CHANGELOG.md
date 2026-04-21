@@ -2,6 +2,16 @@
 
 All notable changes to `laracorekit-demo-module` will be documented in this file.
 
+## [1.0.4] - 2026-04-21
+
+### Changed
+- Redesigned demo banner with clean, compact layout
+- Removed credentials display from admin dashboard (already logged in)
+- Improved timer display: "Next reset: 12m 32s" format
+- Reduced vertical spacing and padding
+- Better visual hierarchy and readability
+- No emojis or special characters
+
 ## [1.0.3] - 2026-04-21
 
 ### Changed
