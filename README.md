@@ -8,15 +8,15 @@ Auto-resetting demo environment for Laravel applications with Filament integrati
 
 ## Features
 
-- âœ… **Auto-Reset Database**: Automatically fresh migrate + seed every 30 minutes (configurable)
-- âœ… **Demo Credentials Banner**: Show login credentials on auth pages and admin dashboard
-- âœ… **Filament Integration**: Beautiful admin widgets displaying demo info
-- âœ… **Action Blocking**: Prevent destructive operations (user deletion, critical settings)
-- âœ… **Media Cleanup**: Auto-delete uploaded files on reset
-- âœ… **Session & Cache Clear**: Clean state on every reset
-- âœ… **Security**: Domain whitelisting, production safeguards
-- âœ… **Cron Scheduling**: Integrated with Laravel scheduler
-- âœ… **Customizable**: Full control over reset interval, credentials, blocked actions
+- **Auto-Reset Database**: Automatically fresh migrate + seed every 30 minutes (configurable)
+- **Demo Credentials Banner**: Show login credentials on auth pages and admin dashboard
+- **Filament Integration**: Beautiful admin widgets displaying demo info
+- **Action Blocking**: Prevent destructive operations (user deletion, critical settings)
+- **Media Cleanup**: Auto-delete uploaded files on reset
+- **Session & Cache Clear**: Clean state on every reset
+- **Security**: Domain whitelisting, production safeguards
+- **Cron Scheduling**: Integrated with Laravel scheduler
+- **Customizable**: Full control over reset interval, credentials, blocked actions
 
 ## Use Cases
 
@@ -276,17 +276,17 @@ Route::middleware('demo.block')->group(function () {
 
 Every reset cycle cleans:
 
-- âœ… **Database**: Fresh migrations + seeders
-- âœ… **Media Files**: `storage/app/public/media/*`
-- âœ… **Cache**: All cached data
-- âœ… **Sessions**: Active user sessions
-- âœ… **Logs**: Rotated (keeps last 7 days)
+- **Database**: Fresh migrations + seeders
+- **Media Files**: `storage/app/public/media/*`
+- **Cache**: All cached data
+- **Sessions**: Active user sessions
+- **Logs**: Rotated (keeps last 7 days)
 
 **Preserved:**
-- âœ… `.env` configuration
-- âœ… Compiled assets (`public/build/*`)
-- âœ… Vendor packages
-- âœ… Node modules
+- `.env` configuration
+- Compiled assets (`public/build/*`)
+- Vendor packages
+- Node modules
 
 ## Troubleshooting
 
