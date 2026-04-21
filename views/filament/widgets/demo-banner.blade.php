@@ -18,9 +18,36 @@
                         <p class="text-sm text-yellow-800 font-mono">
                             <strong>User:</strong> {{ $this->getCredentials()['user']['email'] }} / {{ $this->getCredentials()['user']['password'] }}
                         </p>
-                        <p class="text-xs text-yellow-700 mt-3">
-                            Database resets automatically every <strong>{{ $this->getResetInterval() }} minutes</strong>. All changes will be lost.
+                        <p class="text-xs text-yellow-700 mt-3 flex items-center gap-2">
+                            <span class="inline-block w-2 h-2 rounded-full bg-yellow-500 animate-pulse"></span>
+                            Database resets in: <strong id="demo-reset-countdown">Calculating...</strong>
                         </p>
+
+                        <script>
+                            (function() {
+                                function updateCountdown() {
+                                    const interval = {{ $this->getResetInterval() }};
+                                    const now = new Date();
+                                    const minutes = now.getMinutes();
+                                    const seconds = now.getSeconds();
+                                    
+                                    const remainingMinutes = (interval - 1) - (minutes % interval);
+                                    const remainingSeconds = 59 - seconds;
+                                    
+                                    const display = document.getElementById('demo-reset-countdown');
+                                    if (display) {
+                                        display.innerText = `${remainingMinutes}m ${remainingSeconds}s`;
+                                    }
+                                }
+                                setInterval(updateCountdown, 1000);
+                                updateCountdown();
+                            })();
+                        </script>
+                        
+                        <div class="mt-4 p-2 bg-yellow-100/50 rounded border border-yellow-200">
+                            <p class="text-[10px] font-bold uppercase tracking-wider text-yellow-800 mb-1">Server Cron Job:</p>
+                            <code class="text-[10px] text-yellow-900 break-all">* * * * * cd {{ base_path() }} && php artisan schedule:run >> /dev/null 2>&1</code>
+                        </div>
                     </div>
                 </div>
             </div>
