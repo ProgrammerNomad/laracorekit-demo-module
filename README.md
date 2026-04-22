@@ -408,8 +408,8 @@ The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
 ## Related Projects
 
-- [LaraCoreKit](https://github.com/ProgrammerNomad/LaraCoreKit) - Laravel 12 starter kit with modular architecture
-- [Demo Website](https://laracorekit.mobrilz.digital/) - Live demo powered by this module
+- [LaraCoreKit](https://github.com/ProgrammerNomad/LaraCoreKit) - Laravel 13 starter kit with modular architecture
+- [Demo Website](https://www.laracorekit.com/) - Live demo powered by this module
 
 ---
 
