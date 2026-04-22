@@ -20,8 +20,8 @@ class DemoBannerWidget extends Widget
     public function getCredentials(): array
     {
         return config('demo.credentials', [
-            'admin' => ['email' => 'admin@demo.test', 'password' => 'Admin@123'],
-            'user' => ['email' => 'user@demo.test', 'password' => 'User@123'],
+            'admin' => ['email' => 'admin@laracorekit.com', 'password' => 'Admin@123'],
+            'user' => ['email' => 'user@laracorekit.com', 'password' => 'User@123'],
         ]);
     }
 
