@@ -6,6 +6,19 @@ Auto-resetting demo environment for Laravel applications with Filament integrati
 [![Total Downloads](https://img.shields.io/packagist/dt/programmernomad/laracorekit-demo-module.svg?style=flat-square)](https://packagist.org/packages/programmernomad/laracorekit-demo-module)
 [![License](https://img.shields.io/packagist/l/programmernomad/laracorekit-demo-module.svg?style=flat-square)](https://packagist.org/packages/programmernomad/laracorekit-demo-module)
 
+## Looking for the LaraCoreKit starter bundle?
+
+For your application, install the public frontend and administration core from Packagist:
+
+```bash
+composer require programmernomad/laracorekit:"^0.1"
+php artisan laracorekit:install
+```
+
+Start with a fresh Laravel 13 app and follow the [core installation guide](https://www.laracorekit.com/docs/installation) for database setup and administrator creation. This demo module is a separate optional package; it is not required by the core.
+
+**Disposable demos only:** enabling this module can schedule database resets, erase data and expose sample credentials. Use a separate database/storage and least-privilege credentials. Domain checks do not replace infrastructure isolation. Never enable it in a customer application.
+
 ## Features
 
 - **Auto-Reset Database**: Automatically fresh migrate + seed every 30 minutes (configurable)
@@ -20,15 +33,14 @@ Auto-resetting demo environment for Laravel applications with Filament integrati
 
 ## Use Cases
 
-- ðŸŽ­ **Demo Websites**: Show off your Laravel/Filament projects
-- ðŸ§ª **Testing Environments**: Auto-reset sandbox for testers
-- ðŸŽ“ **Training Platforms**: Clean state for each training session
-- ðŸš€ **SaaS Trials**: Let users try your app without permanent changes
+- Demonstration websites on disposable infrastructure.
+- Isolated testing sandboxes.
+- Training environments with resettable sample data.
 
 ## Requirements
 
 - PHP 8.2 or higher
-- Laravel 11.0, 12.0, or 13.0
+- Laravel 11.0, 12.0, or 13.0 (Laravel 13 requires PHP 8.3+)
 - Filament 3.0, 4.0, or 5.0 (optional, for admin widgets)
 
 ## Installation
@@ -369,15 +381,9 @@ git clone https://github.com/programmernomad/laracorekit-demo-module.git
 composer update programmernomad/laracorekit-demo-module
 ```
 
-### Testing
+### Validation
 
-```bash
-# Run package tests
-composer test
-
-# Code style (Laravel Pint)
-composer pint
-```
+Run `composer validate --strict`. This package currently defines no Composer test/style scripts. Validate resets, host restrictions and blocked actions in a disposable Laravel integration application before releasing changes.
 
 ## Changelog
 
@@ -385,16 +391,16 @@ Please see [CHANGELOG.md](CHANGELOG.md) for recent changes.
 
 ## Contributing
 
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+Open a pull request with a reproducible change and appropriate validation.
 
 ## Security
 
-If you discover any security issues, please email security@example.com instead of using the issue tracker.
+Report sensitive issues through the [LaraCoreKit security reporting policy](https://github.com/ProgrammerNomad/LaraCoreKit/security/policy) rather than posting exploitable details in public.
 
 ## Credits
 
 - [ProgrammerNomad](https://github.com/ProgrammerNomad)
-- [All Contributors](../../contributors)
+- [All Contributors](https://github.com/ProgrammerNomad/laracorekit-demo-module/graphs/contributors)
 
 ## License
 
@@ -404,7 +410,7 @@ The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
 - **Issues**: [GitHub Issues](https://github.com/programmernomad/laracorekit-demo-module/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/programmernomad/laracorekit-demo-module/discussions)
-- **Documentation**: [Full Setup Guide](https://github.com/ProgrammerNomad/LaraCoreKit/blob/main/DEMO_SETUP.md)
+- **Documentation**: [Full Setup Guide](https://www.laracorekit.com/docs/deployment/demo-setup)
 
 ## Related Projects
 
@@ -413,4 +419,4 @@ The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 
 ---
 
-**Made with â¤ï¸ for the Laravel community**
+**Made for the Laravel community**
