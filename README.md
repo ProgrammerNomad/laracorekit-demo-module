@@ -11,9 +11,9 @@ Auto-resetting demo environment for Laravel applications with Filament integrati
 For your application, install the public frontend and administration core from Packagist:
 
 ```bash
-composer create-project laravel/laravel my-app "^13.0"
+composer create-project laravel/laravel my-app "~13.0"
 cd my-app
-composer require programmernomad/laracorekit:"^0.1"
+composer require programmernomad/laracorekit:"~0.1.0"
 php artisan laracorekit:install
 ```
 
