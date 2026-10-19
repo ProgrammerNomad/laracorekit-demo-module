@@ -13,11 +13,11 @@ For your application, install the public frontend and administration core from P
 ```bash
 composer create-project laravel/laravel my-app "~13.0"
 cd my-app
-composer require programmernomad/laracorekit:"~0.1.0"
+composer require programmernomad/laracorekit:"~0.2.0"
 php artisan laracorekit:install
 ```
 
-These commands create Laravel and install the core, not the complete demo website. Before serving the application, follow the [core installation guide](https://www.laracorekit.com/docs/installation) for database setup and administrator creation. This demo module is a separate optional package; it is not required by the core.
+These commands create Laravel and install the core, editable starter homepage and component library. They do not enable sample accounts or automatic database resets. Before serving the application, follow the [core installation guide](https://www.laracorekit.com/docs/installation) for database setup and administrator creation. This demo module is a separate optional package; it is not required by the core.
 
 **Disposable demos only:** enabling this module can schedule database resets, erase data and expose sample credentials. Use a separate database/storage and least-privilege credentials. Domain checks do not replace infrastructure isolation. Never enable it in a customer application.
 
